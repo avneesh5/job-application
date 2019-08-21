@@ -1,0 +1,165 @@
+<html>
+<head>
+    <title> html form</title>
+    <style type="text/css">
+        *{
+            font-family: verdana;
+            font-size: 30px;
+            color:black;
+        }
+    form
+        {
+            background: linear-gradient(90deg,blue,coral,green);
+            width: 500px;
+            padding: 15px;
+            border-radius: 20px;
+            border-bottom-color: aqua;
+        }
+    
+    </style>
+    </head>
+    <body backgroundcolor="red">
+    <h2>Input -Text 1</h2>
+        <form>
+        F_name<input type="text"><br><br>
+        M_name<input type="text"><br><br>
+        L_name<input type="text"><br>
+        </form>
+        <h2>Input -Password 2</h2>
+        <form>
+        password<input type="password">
+        </form>
+        <h2>Input -radio 3</h2>
+        <form> Gender
+        Male<input type="radio" name="gender">
+        female<input type="radio" name="gender">
+        </form>
+        <h2>Input -checkbox 4</h2>
+        <form> SPORTS<br>    
+        cricket<input type="checkbox">
+        hockey<input type="checkbox">
+            chess<input type="checkbox">
+            footbal<input type="checkbox">
+        </form>
+        <h2>Input -Number 5</h2>
+    <form>
+    Enter Age<input type="number" min="10" max="90" step=".5">
+    </form>
+    <h2>Input -Range 6</h2>
+        <form>
+       salary Range 
+            0<input type="range" min="0" max="10000">
+            <span id="val">10000</span>
+        </form>
+        <h2>Input -Email 7</h2>
+        <form>
+        Email<input type="email"><br><br>
+            <input type="submit" value="register">
+        </form>
+        
+         <h2>Input -browser 8</h2>
+        <form>
+       Browser name
+            <input list="browsers" name="browser">
+            <datalist id="browsers">
+            <option value="internet explorer"></option>
+            <option value="safari"></option>
+            <option value="chrome"></option>
+            <option value="firefox"></option>
+            <option value="opera"></option>
+            <option value="uc browser"></option>
+            </datalist>
+        </form>
+        <h2>Input -label 9</h2>
+        <form> <label>
+            Fname<input type="text"><br><br></label><label>
+            Mname<input type="text"><br><br></label><label>
+        Lname<input type="text"><br>
+            </label>
+        </form>
+        <h2>Input -Text_area 10</h2>
+        <form> Address<br>
+            <textarea></textarea>
+        </form>
+          <h2>Input -Feild_set 11</h2>
+        <form> Description
+            <feildset>
+            <input type="text" >
+            
+            </feildset>
+        </form>
+          <h2>Input -select 12</h2>
+        <form>
+            <select>
+            <option>dell i3</option>
+            <option selected>dell i5</option>
+            <option>dell i7</option>
+                <option>hp i3</option>
+                <option>hp i5</option>
+                    <option>hp i7</option>
+                <option>lenevo i3</option>
+                <option>lenevo i5</option>
+                <option>lenevo i7</option>
+            
+            </select>            
+                   </form>
+        
+          <h2>Input -optgroup 13</h2>
+        <form>
+        <select>
+                <optgroup label="dell laptop">
+            <option>dell i3</option>
+            <option>dell i5</option>
+            <option>dell i7</option>
+                </optgroup>
+                <optgroup  label="hp laptop">
+                <option>hp i3</option>
+                <option>hp i5</option>
+                <option>hp i7</option>
+                    </optgroup>
+                <optgroup  label="lenevo laptop" disabled>
+                <option>lenevo i3</option>
+                <option>lenevo i5</option>
+                <option>lenevo i7</option>
+            </optgroup>
+            </select>
+                   </form>
+        
+        <h2>Input -Button 14</h2>
+        <form> <button name="faltu" onclick="alert('i am faltu')">click here</button>
+            <br><br>
+            <button type="submit">Submit</button>
+            <br><br>
+            <button type="button">Button</button>
+            <br><br>
+            name<input type="text">
+            <button type="reset" name="reset" accesskey="r">Reset</button>
+        </form>
+        <h2>text name 15</h2>    
+    <form action="regisyer.jsp">
+    Name<input type="text" size="10" autofocus="autofocus" required="required" placeholder="enter name" maxlength="6">
+        <br><br>
+        <input type="submit" value="submit">
+    
+    </form>
+    <h2>attribute pattern 16</h2>
+    <form action="register.jsp">
+    Age<input type="text" name="textAge" size="10" pattern="[0-9]{1,3}$" title="enter a max 3 digit number">
+        <br><br>
+        <input type="submit" value="submit">
+    
+    
+    </form>
+        <div>
+<form action="register.jsp">
+Enter a date before 2019-02-28:
+    <input type="date" name="bday" max="2019-08-20">
+<br><br>
+enter a date after 2000-01-02:
+<input type="date" name="bday" min="2000-02-30">
+    <br><br>
+    
+    </form>
+        </div>
+    </body>
+</html>
